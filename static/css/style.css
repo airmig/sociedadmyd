@@ -67,33 +67,33 @@
     background-repeat: no-repeat;     
 }
 
-/* Rectangle 3 */
-.hero-text {
+.hero-text-services, .hero-text {
     position: relative;
-    width: 450px;
-    height: 250px;
-    left: 102px;
-    top: 100px;
+    max-width: 80%; /* Change from width to max-width for responsiveness */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 100px auto; /* Center it horizontally with automatic margins */
     background: #332F2F;
     border-radius: 15px;
     color: white;
-    padding: 50px;
-    z-index: 0;
-}
-
-.hero-text-services {
-    position: relative;
-    width: 80%;
-    height: 250px;
-    left: 102px;
-    top: 100px;
-    background: #332F2F;
-    border-radius: 15px;
-    color: white;
-    padding: 50px;
+    padding: 20px; /* Adjust padding for better responsiveness */
     z-index: 0;
     opacity: 0.8;
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Align items in a column */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
 }
+
+@media (max-width: 768px) {
+    .hero-text-services {
+        max-width: 95%; /* Make it wider on small screens */
+        padding: 5px; /* Reduce padding */
+        margin: 10px auto; /* Adjust margin */
+    }
+}
+
+
 
 .row-about {
     background-color: #e9e6e6;
