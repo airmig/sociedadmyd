@@ -1,0 +1,160 @@
+* {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    background-color: #3452A1;
+}
+
+.nav-link, .navbar-brand, .company-name {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    color: #21a537;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #21a537;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+.navbar-toggler-icon{
+    filter: invert(1);
+}
+
+.btn-contact {
+    color: white;
+    font-size: 1.5rem;
+    background-color: #062C8E;
+}
+
+.btn-contact:hover {
+    background-color: #21a537;
+    font-size: 1.5rem;
+}
+
+.hero {
+    background-image: url('../images/hero.webp');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 500px;
+    width: 100%;
+    display:block;
+}
+
+.hero-services {
+    background-image: url('../images/condo.webp');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 500px;
+    width: 100%;
+    display:block;
+}
+
+.building {
+    background-image: url('../images/building.webp');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;     
+}
+
+/* Rectangle 3 */
+.hero-text {
+    position: relative;
+    width: 450px;
+    height: 250px;
+    left: 102px;
+    top: 100px;
+    background: #332F2F;
+    border-radius: 15px;
+    color: white;
+    padding: 50px;
+    z-index: 0;
+}
+
+.hero-text-services {
+    position: relative;
+    width: 80%;
+    height: 250px;
+    left: 102px;
+    top: 100px;
+    background: #332F2F;
+    border-radius: 15px;
+    color: white;
+    padding: 50px;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.row-about {
+    background-color: #e9e6e6;
+    padding: 50px;
+}
+
+.row-about-service {
+    background-color: white;
+    padding: 50px;
+}
+
+.form-row {
+    background-color: white;
+    padding: 50px;
+}
+
+.row-services {
+    background-color: #3452A1;
+    padding: 50px;
+}
+
+.row-services-service {
+    background-color: rgb(238, 235, 235);
+    padding: 50px;
+}
+
+.row-services-service .card {
+    margin: 50px;
+}
+
+.footer {
+    background-color: #3452A1;
+    padding: 50px;   
+}
+
+.row-services .card {
+    margin: 50px;
+}
+
+.subheading {
+    font-size: 1.7rem;
+    color: #21a537;
+}
+
+.title {
+    color: black;
+    font-size: 2rem;
+}
+
+.text-content {
+    font-size: 1.3rem;
+    padding-right: 50px;
+}
+
+.row>* {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/*
+.card:hover{
+    box-shadow: 5px 5px 0 #3452A1;
+    transform: translateY(-5px);
+}*/
