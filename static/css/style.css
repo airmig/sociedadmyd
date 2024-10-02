@@ -77,7 +77,6 @@
     color: white;
     padding: 20px; /* Adjust padding for better responsiveness */
     z-index: 0;
-    opacity: 0.8;
     display: flex; /* Use flexbox to center content */
     flex-direction: column; /* Align items in a column */
     justify-content: center; /* Center vertically */
