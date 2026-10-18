@@ -56,7 +56,24 @@ document.addEventListener('DOMContentLoaded', function () {
 // El sitio está escrito en español; las traducciones viven en static/i18n/<idioma>.json
 // y se buscan por el texto original en español.
 
-var LANGS = ['es', 'en', 'fr', 'it', 'pt', 'de', 'ko', 'zh', 'ja'];
+var LANGS = ['es', 'en', 'fr', 'it', 'pt', 'de', 'ko', 'zh', 'ja', 'ar'];
+var RTL_LANGS = ['ar'];
+var BOOTSTRAP_CSS = {
+    ltr: { href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css', sri: 'sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' },
+    rtl: { href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css', sri: 'sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb' }
+};
+
+// Árabe se lee de derecha a izquierda: cambia la dirección y la versión RTL de Bootstrap
+function setDirection(lang) {
+    var dir = RTL_LANGS.indexOf(lang) !== -1 ? 'rtl' : 'ltr';
+    document.documentElement.dir = dir;
+    var link = document.getElementById('bootstrap-css');
+    var css = BOOTSTRAP_CSS[dir];
+    if (link && link.getAttribute('href') !== css.href) {
+        link.setAttribute('integrity', css.sri);
+        link.setAttribute('href', css.href);
+    }
+}
 var I18N_TAGS = 'title,h1,h2,h3,h4,p,li,a,span,small,label,button,strong';
 var I18N_ATTRS = ['placeholder', 'aria-label', 'alt'];
 var i18nCache = {};
@@ -106,6 +123,7 @@ function applyI18n(state, lang, dict) {
         a.el.setAttribute(a.attr, dict[a.src] || a.src);
     });
     document.documentElement.lang = lang;
+    setDirection(lang);
     document.querySelectorAll('.lang-current').forEach(function (el) {
         el.textContent = lang.toUpperCase();
     });
