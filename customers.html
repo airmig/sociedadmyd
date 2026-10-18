@@ -1,129 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>Sociedad M&D</title>
-    <link rel="icon" href="static/images/sociedadmyd.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- social -->
-    <meta property="og:title" content="Sociedad M&D">
-    <meta property="og:description" content="Sociedad M&D, administracion de condominios suministra servicios en gestion de cobranzas, informes contables,  gestion de facturas de servicios y atencion personalizada">
-    <meta property="og:image" content="statci/images/sociedadmyd.webp">
-    <meta property="og:url" content="https://www.sociedadmyd.com">
-    <meta property="og:type" content="website"> 
-    <meta property="og:site_name" content="Sociedad M&D">
-    <!-- basic -->
-    <meta property="description" content="Sociedad M&D, Sociedadmyd, Condominios, Administracion de condominios, Gestion de cobranzas, Informes contables,  Gestion de facturas de servicios, Atencion personalizada"/>
-    <meta property="keywords" content="Condominios, Sociedad M&D, SociedadMyD, gestion de cobranza, contabilidad, informes contables, gestion de facturas de servicios, atencion personalizada"/>
-    <meta property="author" content="Ariel Duran"/>
-    <meta property="robots" content="index, follow"/>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes | Sociedad M&D</title>
+    <meta name="description" content="Sociedad M&D, administración de condominios en Costa Rica: gestión de cobranza, informes contables, pago puntual de servicios, supervisión de seguridad y atención personalizada.">
+    <meta name="keywords" content="administración de condominios, Costa Rica, Sociedad M&D, SociedadMyD, gestión de cobranza, informes contables, cuotas de mantenimiento, atención personalizada">
+    <meta name="author" content="Sociedad M&D">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1d2f66">
+    <link rel="icon" href="static/images/sociedadmyd.ico" type="image/x-icon">
+    <!-- social -->
+    <meta property="og:title" content="Clientes | Sociedad M&D">
+    <meta property="og:description" content="Sociedad M&D, administración de condominios en Costa Rica: gestión de cobranza, informes contables, pago puntual de servicios, supervisión de seguridad y atención personalizada.">
+    <meta property="og:image" content="https://www.sociedadmyd.com/static/images/hero.webp">
+    <meta property="og:url" content="https://www.sociedadmyd.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Sociedad M&D">
+    <meta property="og:locale" content="es_CR">
+    <script>document.documentElement.classList.add('js');</script>
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
-    <link href="static/css/style.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Prata&display=swap" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-myd-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-                <img src="static/images/sociedadmyd.webp" alt="Sociedad M&D" width="55" height="50">
-          </a>
-          <span class="company-name">Sociedad M&D</span>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item"></li>
-                <a class="nav-link" href="about.html">Nuestra Empresa</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Servicios</a>
-              </li>
-              <li class="nav-item"></li>
-                <a class="nav-link active" href="customers.html">Clientes</a>
-              </li>
-            </ul>
-            <button class="btn btn-contact" type="submit">Contáctanos</button>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-myd fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="static/images/logo.webp" alt="Logo Sociedad M&D" width="64" height="50">
+                <span class="brand-text">
+                    <span class="brand-name">Sociedad M&amp;D</span>
+                    <span class="brand-tag">Administración de Condominios</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto me-lg-3 mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Nuestra Empresa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="customers.html">Clientes</a></li>
+                </ul>
+                <a class="btn btn-myd" href="#contacto">Contáctanos</a>
+            </div>
         </div>
-      </nav>
-      <div class=""container-fluid>
-        <div class="row row-about">
-            <div class="col-md-6">
-                <p><span class="subheading">Clientes Excepcionalmente Atendidos</span><br/>
-                <span class="title">Nuestros Clientes</span></p>
-                <p class="text-content">
+    </nav>
 
-                </p>
-            </div>
-            <div class="col-md-6 building">
-               
+    <header class="page-header">
+        <div class="hero-bg bg-building"></div>
+        <div class="container hero-anim">
+            <span class="eyebrow">Nuestros clientes</span>
+            <h1>Clientes excepcionalmente atendidos</h1>
+            <p>Propietarios y juntas directivas que confían en nosotros la administración de su condominio.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="row g-4 g-lg-5 align-items-center">
+                <div class="col-lg-6 reveal reveal-left">
+                    <div class="about-media">
+                        <img src="static/images/condo.webp" alt="Condominio residencial" loading="lazy" width="1792" height="1024">
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal reveal-right">
+                    <span class="eyebrow">Compromiso con cada comunidad</span>
+                    <h2 class="section-title">Lo que nuestros clientes reciben</h2>
+                    <p class="lead-text">Cada condominio es distinto. Por eso trabajamos de cerca con cada junta directiva para ofrecer un servicio personalizado, transparente y oportuno.</p>
+                    <ul class="check-list">
+                        <li>Informes contables mensuales</li>
+                        <li>Acceso en línea a la información del inmueble</li>
+                        <li>Pago puntual de todos los servicios del condominio</li>
+                        <li>Supervisión de mantenimiento y seguridad</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="row row-services justify-content-center">
-           &nbsp;
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 reveal" style="max-width: 640px">
+                <span class="eyebrow">Beneficios</span>
+                <h2 class="section-title">Por qué nos eligen</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3 reveal" style="--d: 0.0s">
+                    <div class="value-card">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></svg></span>
+                        <h3>Condominios bien administrados</h3>
+                        <p>Finanzas ordenadas, servicios al día y áreas comunes supervisadas.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 reveal" style="--d: 0.1s">
+                    <div class="value-card">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span>
+                        <h3>Información confiable</h3>
+                        <p>Cada propietario conoce lo facturado, lo pagado y su situación de pago.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 reveal" style="--d: 0.2s">
+                    <div class="value-card">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H5a2 2 0 0 1 0-4h13v4"/><path d="M3 5v14a2 2 0 0 0 2 2h15V7"/><path d="M16 14h.01"/></svg></span>
+                        <h3>Cuotas al día</h3>
+                        <p>Un sistema de cobranza personalizado que reduce la morosidad.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 reveal" style="--d: 0.3s">
+                    <div class="value-card">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg></span>
+                        <h3>Comunicación cercana</h3>
+                        <p>Atención a trámites, sugerencias y conflictos vecinales.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Espacio para logos o testimonios de clientes -->
         </div>
-        <div class="row form-row">
-            <div class="col-lg-12">
-                <p><span class="subheading">Ponerse en contacto</span><br/>
-                    <span class="title" style="color: #F20000">¡Estamos aquí para ayudar!</span></p>
-                <form action="https://formsubmit.co/airmig@gmail.com" method="POST">
-                    <input type="hidden" name="_cc" value="rduran1316@gmail.com">
-                    <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio web - Sociedad M&D">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="name" name="Nombre" required placeholder="Digita tu nombre">
-                      </div>
-                      <div class="mb-3">
-                        <label for="phone" class="form-label">Teléfono:</label>
-                        <input type="tel" class="form-control" id="phone" name="Telefono" placeholder="55554444">
-                      </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo electronico:</label>
-                        <input type="email" class="form-control" id="email" name="email" required placeholder="ejemplo@correo.com">
-                      </div>
-                      <div class="mb-3">
-                        <label for="message" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="message" name="Mensaje" rows="5" required></textarea>
-                      </div>
-                      <div class="mb-3 text-center">
-                        <button class="btn btn-primary" type="submit">Enviar datos</button>
-                        <button class="btn btn-danger" type="reset">Borrar datos</button>
+    </section>
+
+    <section class="cta-band">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8 reveal reveal-left">
+                    <h2>¿Quieres que tu condominio sea el próximo?</h2>
+                    <p>Escríbenos y con gusto te contamos cómo podemos ayudar a tu comunidad.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end reveal reveal-right">
+                    <a class="btn btn-myd" href="#contacto">Solicitar información <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light" id="contacto">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 reveal" style="max-width: 640px">
+                <span class="eyebrow">Ponerse en contacto</span>
+                <h2 class="section-title">¡Estamos aquí para ayudar!</h2>
+                <p class="lead-text">Cuéntanos sobre tu condominio y te responderemos a la mayor brevedad.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-5 reveal reveal-left">
+                    <div class="contact-info">
+                        <h3>Información de contacto</h3>
+                        <p>Atendemos a propietarios y juntas directivas de condominios.</p>
+                        <div class="contact-item">
+                            <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+                            <div>
+                                <small>Teléfono</small>
+                                <a href="tel:+50622149476">(506) 2214 9476</a><br>
+                                <a href="tel:+50683336638">(506) 8333 6638</a>
+                            </div>
                         </div>
-                </form>
+                        <div class="contact-item">
+                            <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></span>
+                            <div>
+                                <small>Correo electrónico</small>
+                                <a href="mailto:sociedadmyd@gmail.com">sociedadmyd@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                            <div>
+                                <small>Dirección</small>
+                                <span>San Sebastián, San José, Costa Rica</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 reveal reveal-right">
+                    <form class="contact-form" action="https://formsubmit.co/airmig@gmail.com" method="POST">
+                        <input type="hidden" name="_cc" value="rduran1316@gmail.com">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio web - Sociedad M&D">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" name="Nombre" required placeholder="Tu nombre completo" autocomplete="name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="phone" name="Telefono" placeholder="8888 8888" autocomplete="tel">
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email" required placeholder="ejemplo@correo.com" autocomplete="email">
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" name="Mensaje" rows="5" required placeholder="¿Cómo podemos ayudarte?"></textarea>
+                            </div>
+                            <div class="col-12 d-flex flex-wrap align-items-center gap-2 pt-2">
+                                <button class="btn btn-myd" type="submit">Enviar mensaje <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                                <button class="btn-reset" type="reset">Borrar datos</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="row footer">
-            <div class="col-md-6">
-                <p><span class="subheading">Contáctanos</span><br/>
-                    <span class="title" style="color: white; font-size: 1.1rem">Administración de Condominios - Sociedad M&D</span></p>
-                <p style="color: white">
-                    <strong>Tel:</strong>  (506) 2214 9476  -  8333 6638<br/>
-                    <strong>Email:</strong> sociedadmyd@gmail.com​<br/>
-                    <strong>Dirección:</strong> San Sebastian - San José
-                   Costa Rica
-                </p>
-            </div>
-            <div class="col-md-6 text-center">
-                <p style="color:white; font-size: 2.2rem">
-                    Sociedad M&D<br/>
-                    <img style="border-radius: 50%; width: 160px; height: 160px; object-fit: cover;" src="static/images/logo.webp" alt="Sociedad M&D"/>
-                </p>
-            </div>
-        </div>
-      </div>
-      
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <footer class="footer-myd">
+        <div class="container">
+            <div class="row g-4 g-lg-5">
+                <div class="col-lg-5">
+                    <div class="footer-brand">
+                        <img src="static/images/sociedadmyd.webp" alt="Logo Sociedad M&D" width="64" height="50" loading="lazy">
+                        <span>Sociedad M&amp;D</span>
+                    </div>
+                    <p>Eficiencia y profesionalismo en la administración de condominios. Información fiel y confiable para cada propietario.</p>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Nuestra Empresa</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="customers.html">Clientes</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <h4>Contáctanos</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+50622149476">(506) 2214 9476</a> · <a href="tel:+50683336638">8333 6638</a></li>
+                        <li><a href="mailto:sociedadmyd@gmail.com">sociedadmyd@gmail.com</a></li>
+                        <li>San Sebastián, San José, Costa Rica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                &copy; <span id="year">2025</span> Sociedad M&amp;D · Administración de Condominios. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="Volver arriba">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="static/js/main.js"></script>
 </body>
 </html>
