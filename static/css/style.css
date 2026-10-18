@@ -871,8 +871,8 @@ a:hover {
 
 .to-top {
     position: fixed;
-    right: 22px;
-    bottom: 22px;
+    right: 28px;
+    bottom: 96px;
     width: 46px;
     height: 46px;
     border-radius: 50%;
@@ -898,6 +898,106 @@ a:hover {
 
 .to-top:hover {
     background: var(--myd-green-dark);
+}
+
+/* ---------- WhatsApp ---------- */
+
+.whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 1031;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 58px;
+    padding: 0 16px;
+    border-radius: 50px;
+    background: #25d366;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, .4);
+    transition: transform .25s var(--myd-ease), box-shadow .25s var(--myd-ease);
+    animation: waIn .6s var(--myd-ease) .8s both;
+}
+
+.whatsapp-float::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 2px solid #25d366;
+    animation: waPulse 2.4s ease-out infinite;
+    z-index: -1;
+}
+
+.whatsapp-float svg {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.whatsapp-float:hover {
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(37, 211, 102, .5);
+}
+
+.whatsapp-label {
+    font-weight: 600;
+    font-size: .95rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 767.98px) {
+    .whatsapp-float { width: 58px; padding: 0; justify-content: center; }
+    .whatsapp-label { display: none; }
+    .to-top { right: 28px; bottom: 92px; }
+}
+
+/* ---------- Language switch ---------- */
+
+.btn-lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border-radius: 50px;
+    border: 1px solid var(--myd-border);
+    color: var(--myd-navy);
+    font-weight: 600;
+    font-size: .9rem;
+    background: #fff;
+}
+
+.btn-lang:hover,
+.btn-lang.show {
+    border-color: var(--myd-blue);
+    color: var(--myd-blue);
+    background: #fff;
+}
+
+.lang-switch .dropdown-menu {
+    border: none;
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: var(--myd-shadow-lg);
+    min-width: 170px;
+}
+
+.lang-switch .dropdown-item {
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.lang-switch .dropdown-item.active,
+.lang-switch .dropdown-item:active {
+    background: var(--myd-blue);
+    color: #fff;
+}
+
+@media (max-width: 991.98px) {
+    .lang-switch { margin: 6px 0 4px; }
 }
 
 /* ---------- Scroll reveal ---------- */
@@ -928,6 +1028,16 @@ a:hover {
 
 @keyframes heroIn {
     to { opacity: 1; transform: none; }
+}
+
+@keyframes waIn {
+    from { opacity: 0; transform: scale(.6) translateY(20px); }
+    to { opacity: 1; transform: none; }
+}
+
+@keyframes waPulse {
+    0% { transform: scale(1); opacity: .7; }
+    100% { transform: scale(1.35); opacity: 0; }
 }
 
 @keyframes floaty {
