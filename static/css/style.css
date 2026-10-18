@@ -1014,6 +1014,11 @@ a:hover {
 .js .reveal.reveal-right { transform: translateX(40px); }
 .js .reveal.reveal-zoom { transform: scale(.94); }
 
+@media (max-width: 991.98px) {
+    .js .reveal.reveal-left,
+    .js .reveal.reveal-right { transform: translateY(34px); }
+}
+
 .js .reveal.in {
     opacity: 1;
     transform: none;
